@@ -1,0 +1,103 @@
+// Global Layout
+@import 'layout/variables';
+@import 'layout/normalize';
+@import 'layout/typography';
+@import 'layout/elements';
+
+// Global Elements
+@import 'global/components';  
+@import 'global/header'; 
+
+
+//latest
+.recent-trend-wrapper {
+    .slick-dots {
+        margin: 20px auto 0;
+    }
+
+    .slick-list {
+        padding: 0 0 40px;
+    }
+}
+
+.slick-prev.slick-arrow {
+
+    @media (max-width: 1023px) {
+        
+        margin-right: 20px;
+    }
+    @media (max-width: 767px) {
+
+        right: 6% !important;
+    }
+}
+
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+.visual-bg .container{
+    z-index: 5;
+}
+.visual-bg .visual-inner .box-holder .title h1::before {
+    z-index: -1;
+}
+
+@media (max-width: 1023px) {
+    .visual-bg .visual-inner .box-holder .text-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .visual-bg .visual-inner .box-holder .text-box h5{
+       margin: 0 0 10px;
+       text-align: center;
+    }
+}
+@media (max-width: 767px) {
+    .popular-catagories .popular-catagories-wraper .popular-catagories-inner .slick-next.slick-arrow {
+        top: 0;
+    }
+
+    .popular-catagories .popular-catagories-wraper .popular-catagories-inner .slick-arrow.slick-prev {
+        left: 2%;
+        right: inherit;
+        top: inherit!important;
+        bottom: 0 !important;
+    }
+
+    .popular-catagories .popular-catagories-wraper .popular-catagories-inner .slick-next.slick-arrow {
+        right: 2%;
+        top: inherit!important;
+        bottom: 0 !important;
+    }
+    .visual-bg .visual-inner .box-holder .title h1{
+        text-align: center;
+        font-size: 50px;
+    }
+    .visual-bg .visual-inner .box-holder .title h1::before {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        background-size: contain;
+        height: 100%;
+        background-position: center;
+        top: inherit;
+        bottom: -100%;
+    }
+    .visual-bg .visual-inner .sale-box {
+        height: auto;
+    }
+    .visual-bg .visual-inner .box-holder  h1{
+        margin: 0 0 90px;
+     }
+     .visual-bg .visual-inner .box-holder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+     .visual-bg .visual-inner .box-holder .image-box {
+        margin: 0;
+    }
+  
+}
